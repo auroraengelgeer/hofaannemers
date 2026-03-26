@@ -13,7 +13,7 @@ export function ContactPage() {
         copy="U kunt gratis en vrijblijvend uw vraag stellen of uw project opsturen. Wij nemen binnen 24 uur contact met u op en geven u gratis en vrijblijvend aan wat wij voor u kunnen doen en welke kosten daaraan verbonden zijn."
       />
 
-      <Section eyebrow="Contact" title="Direct bereikbaar en eenvoudig aanvragen">
+      <Section eyebrow="Contact" title="Direct bereikbaar en eenvoudig aanvragen" className="contact-section">
         <div className="contact-layout">
           <div className="contact-details">
             <p>
