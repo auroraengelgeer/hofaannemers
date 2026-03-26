@@ -66,7 +66,7 @@ export function Gallery({ images, title }) {
             onClick={showPrevious}
             aria-label="Vorige afbeelding"
           >
-            ‹
+            &lsaquo;
           </button>
 
           <button
@@ -91,7 +91,7 @@ export function Gallery({ images, title }) {
             onClick={showNext}
             aria-label="Volgende afbeelding"
           >
-            ›
+            &rsaquo;
           </button>
         </div>
       ) : null}
