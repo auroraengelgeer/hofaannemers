@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { ScrollToTop } from "./ScrollToTop";
 
@@ -9,6 +10,7 @@ export function AppShell() {
       <Header />
       <main className="page-content">
         <Outlet />
+        <Footer />
       </main>
     </div>
   );
