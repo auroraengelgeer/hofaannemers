@@ -52,7 +52,60 @@
 
 .gallery-grid__item {
   min-height: 180px;
+  border: 0;
   border-radius: 10px;
   background-size: cover;
   background-position: center;
+  cursor: zoom-in;
+}
+
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(8, 12, 18, 0.84);
+}
+
+.gallery-lightbox__image {
+  max-width: min(100%, 1100px);
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-lightbox__close,
+.gallery-lightbox__nav {
+  position: absolute;
+  border: 0;
+  border-radius: 4px;
+  background: #fffdfa;
+  color: #15212c;
+  cursor: pointer;
+}
+
+.gallery-lightbox__close {
+  top: 24px;
+  right: 24px;
+  padding: 10px 14px;
+}
+
+.gallery-lightbox__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.gallery-lightbox__nav--prev {
+  left: 24px;
+}
+
+.gallery-lightbox__nav--next {
+  right: 24px;
 }
